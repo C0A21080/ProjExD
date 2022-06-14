@@ -55,4 +55,5 @@ def kaitou(seikai):
 
 
 if __name__ == "__main__":
+    alphabet = [chr(c+65) for c in range(26)]
     main()
