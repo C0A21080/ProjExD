@@ -40,6 +40,7 @@ def kaitou(seikai):
     num = int(input("欠損文字はいくつあるでしょうか？"))
     if num != NUM_OF_ABS_CHARS:
         print("不正解です。またチャレンジしてください")
+        print("-"*50)
         return 0 #文字数回答で不正解の場合
     else:
         print("正解です。それでは具体的に欠損文字を1つずつ入力してください")
