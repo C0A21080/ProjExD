@@ -21,5 +21,8 @@ def kaito(seikai):
     else:
         print("出直してこい")
 
+ed=datetime.datetime.now()
+print(f"解答まで{(ed-st).seconds}秒かかりました")
+
 if __name__ =="__main__":
     main()
