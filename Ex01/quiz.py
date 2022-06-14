@@ -1,4 +1,7 @@
 import random
+import datetime
+
+st=datetime.datetime.now()
 
 def main():
     seikai = shutudai()
