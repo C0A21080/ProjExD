@@ -2,16 +2,16 @@ import tkinter as tk
 import maze_maker as mm
 
 def key_down(event):
-    global key
+    global key #キー入力
     key = event.keysym
     #print(f"{key}キーが押されました")
 
 def key_up(event):
-    global key
+    global key #キー入力
     key = ""
 
 def main_proc():
-    global cx, cy, mx, my
+    global cx, cy, mx, my #キーを入力したときに進む大きさ
     delta = {#キー：押されているキーkey/値：移動幅リスト[x,y]
         ""     : [0, 0],
         "Up"   : [0, -1],
@@ -42,8 +42,8 @@ if __name__ == "__main__":
     mx, my = 1, 1
     cx, cy = mx*50+25, my*50+25
     canvas.create_image(cx, cy, image=tori, tag="tori")
-    if cx == 250:
-        tori = tk.PhotoImage(file="fig/don.png")
+    #if cx == 250:
+        #tori = tk.PhotoImage(file="fig/don.png")
 
 
     key = ""
