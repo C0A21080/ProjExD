@@ -3,7 +3,7 @@ import sys
 import random
 
 
-width = 1600
+width = 2000
 
 class Screen:
     def __init__(self, title, wh, image):
